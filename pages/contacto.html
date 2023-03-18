@@ -15,7 +15,7 @@
 
 <!-- favicon -->
 
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 
 <!-- font family -->
 
@@ -30,7 +30,11 @@
 
 <!-- custom css -->
 
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+<!-- aos animated -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
@@ -40,7 +44,7 @@
 
 <header> 
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-aos="flip-up">
 
         <div class="container-fluid">
 
@@ -76,7 +80,7 @@
 
                     <li class="nav-item">
 
-                        <a class="nav-link" href="../pages/guiaDeCoEx.html">Guia de comercio exterior</a>
+                        <a class="nav-link" href="../pages/guiaDeCoEx.html">Guia de C.E</a>
 
                     </li>
 
@@ -100,11 +104,10 @@
 
 <!-- section one -->
 
-    <section class="s_one">
+    <section class="s_one" data-aos="fade-up">
 
         <h1>Cuentanos tu necesidad</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, praesentium.</p>
-        <a href="#">Contactate con un asesor </a>
+        <p>En g3m cargo s.a.s, estamos aquí para ayudarte con tus necesidades en importaciones, exportaciones, transporte de carga y asesoría aduanera. Cuéntanos qué necesitas y encontraremos la mejor solución para ti. ¡Contáctanos ahora!</p>
 
     </section>
 
@@ -112,11 +115,10 @@
 
 <!-- section two -->
 
-    <section class="s_two">
+    <section class="s_two" data-aos="fade-up">
 
         <h1>Nuestras instalaciones</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, praesentium.</p>
-        <a href="#">Como compañia</a>
+        <p>Te invitamos a conocer nuestras instalaciones, allí podremos guiarte en tus procesos de comercio exterior</p>
 
         <div class="iframe_maps">
 
@@ -129,7 +131,7 @@
 <!-- Form Contac -->
 
 
-<section class="form_contac">
+<section class="form_contac" data-aos="fade-up">
 
         <h3>Contactanos</h3>
 
@@ -155,7 +157,7 @@
 
 <!-- footer -->
 
-<footer class="footer-end">
+<footer class="footer-end" data-aos="flip-down">
 
     <div class="content-footer">
 
@@ -180,20 +182,20 @@
             <h2>Redes</h2>
 
             <li>
-                <a href="#">
+                <a href="https://www.facebook.com/" target="_blank">
                 <i class="fa-brands fa-facebook"></i>
                 </a>
             </li>
 
             <li>
-                <a href="#">
+                <a href="https://twitter.com/?lang=es" target="_blank">
                 <i class="fa-brands fa-square-twitter"></i>
                 </a>
             </li>
 
 
             <li>
-                <a href="#">
+                <a href="https://www.instagram.com/g3mcargo/" target="_blank">
                 <i class="fa-brands fa-square-instagram"></i>
                 </a>
             </li>
@@ -213,6 +215,13 @@
 <!-- Boopstrap Scrip -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+<!-- script animation -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 
 </body>
 
