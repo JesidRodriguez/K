@@ -14,11 +14,13 @@ header {
 .body {
   margin: auto;
   width: 95%;
+  overflow-x: hidden;
 }
 
 body {
   background-color: white;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 svg {
@@ -234,6 +236,7 @@ hr {
   text-decoration: none;
   box-shadow: 7px 13px 37px #000;
   margin-bottom: 10px;
+  overflow-x: hidden;
 }
 .footer-end ul {
   margin: auto;
