@@ -67,31 +67,29 @@ hr {
   background: url("../images/ComercioExterior.webp") no-repeat center center/cover;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  color: black;
-  font-size: 25px;
-  border-radius: 7px;
+}
+
+.central-text h1 {
   text-align: center;
+  font-size: 25px;
+}
+.central-text p {
+  text-align: center;
+  font-size: 20px;
 }
 
 .btn {
   cursor: pointer;
-  display: inline-block;
+  display: block;
   border: 0;
   font-weight: bold;
   padding: 10px 20px;
   background: rgba(255, 255, 255, 0.431372549);
   color: black;
   font-size: 15px;
+  width: 18%;
   border: 1px solid blue;
-  margin: 10 px 0;
-}
-.btn h1 {
-  margin-bottom: 1000px;
-  margin-top: 1000px;
+  margin: auto;
 }
 .btn:hover {
   opacity: 0.7;
@@ -137,6 +135,9 @@ hr {
   text-align: justify;
   font-size: 20px;
 }
+.n_sect h2 {
+  font-size: 30px;
+}
 
 .n_sect_div {
   margin-left: 20px;
@@ -173,8 +174,9 @@ hr {
   align-items: center;
   font-size: 20px;
 }
-.s_two h1 {
+.s_two h2 {
   margin-bottom: 20px;
+  font-size: 30px;
 }
 
 .iframe_maps {
@@ -205,7 +207,7 @@ hr {
   font-size: 15px;
   margin-bottom: 100px;
 }
-.form_contac h3 {
+.form_contac h2 {
   font-size: 22px;
   margin-bottom: 20px;
   color: #ffffff;
@@ -261,7 +263,7 @@ hr {
   font-size: 1rem;
 }
 
-@media screen and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   /* nav main ind */
   .navbar-brand {
     width: 150px;
@@ -273,25 +275,33 @@ hr {
   /* secction main ind */
   .central-img {
     width: 100%;
-    height: 250px;
+    height: 350px;
     padding-bottom: 10px;
     margin-bottom: 10px;
     margin-top: 10;
     display: flex;
     font-size: 13px;
     text-align: center;
+    border-radius: 7px;
+  }
+  .central-text h1 {
+    font-size: 20px;
+  }
+  .central-text p {
+    font-size: 15px;
   }
   .btn {
     padding: 3px 5px;
+    width: 180px;
   }
   /* cards information one ind */
   .our-alies {
     display: block;
-    font-size: 13px;
+    font-size: 15px;
   }
   .our-alies img {
     width: 100%;
-    height: 200px;
+    height: 300px;
     margin-bottom: 10px;
     border-radius: 7px;
   }
@@ -303,39 +313,45 @@ hr {
   .section-sec-one {
     width: 100%;
     height: 250px;
-    padding-bottom: 0px;
+    margin-bottom: 5px;
     font-size: 13px;
   }
   .section-sec-one .content {
     width: 95%;
-    padding: 90px 10px 10px 10px;
+    padding: 20px 10px 10px 10px;
+    text-align: justify;
+    margin-bottom: 300px;
   }
   /* footer */
   .footer-end {
-    font-size: 13px;
+    font-size: 30px;
     padding: 15px 15px 15px 50px;
+    margin-top: 0px;
   }
   .content-footer ul {
     padding: 1px;
     line-height: 8px;
-    font-size: 10px;
+    font-size: 13px;
   }
   .content-footer ul li i {
-    font-size: 13px;
+    font-size: 15px;
     padding: 5px;
   }
   /* section one, two, tree, four us services guia */
   .n_sect {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    font-size: 13PX;
+    font-size: 13px;
   }
   .n_sect_div {
+    width: 100%;
     order: 2;
   }
-  .n_sect_div h1 {
+  .n_sect_div h2 {
     text-align: center;
     margin: 10px 0 10px 0;
+    font-size: 25px;
   }
   .n_sect_div p {
     margin: 10px;
@@ -352,23 +368,160 @@ hr {
     height: 250px;
     padding-bottom: 10px;
     margin-bottom: 10px;
-    margin-top: 10;
+    margin-top: 10px;
     font-size: 13px;
   }
   .s_one {
     text-align: center;
     font-size: 15px;
+    height: 350px;
   }
   .s_two p {
     text-align: center;
     font-size: 13px;
     width: 100%;
   }
-  .iframe {
-    width: 400px;
+  .iframe_maps {
+    width: 100%;
     height: 250px;
     border-radius: 7px;
+    margin-bottom: 120px;
   }
+  .iframe_maps .iframe {
+    width: 100%;
+  }
+}
+.form_contac {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* nav main ind */
+  .navbar-brand {
+    width: 150px;
+    height: 100px;
+  }
+  .container-fluid {
+    font-size: 20px;
+  }
+  /* secction main ind */
+  .central-img {
+    width: 100%;
+    height: 350px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: 10;
+    display: flex;
+    text-align: center;
+  }
+  .central-text h1 {
+    font-size: 25px;
+  }
+  .central-text p {
+    font-size: 20px;
+  }
+  .btn {
+    padding: 3px 5px;
+    width: 25%;
+  }
+  /* cards information one ind */
+  .our-alies {
+    display: block;
+    font-size: 20px;
+  }
+  .our-alies img {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+  }
+  .our-alies h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  /* section secundary ind */
+  .section-sec-one {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  .section-sec-one .content {
+    width: 100%;
+    padding: 50px 10px 10px 10px;
+    text-align: justify;
+    margin-bottom: 300px;
+  }
+  /* footer */
+  .footer-end {
+    font-size: 13px;
+    padding: 15px 15px 15px 50px;
+    margin-top: 0px;
+  }
+  .content-footer ul {
+    padding: 1px;
+    line-height: 8px;
+    font-size: 20px;
+  }
+  .content-footer ul li i {
+    font-size: 20px;
+    padding: 5px;
+  }
+  /* section one, two, tree, four us services guia */
+  .n_sect {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+  }
+  .n_sect_div {
+    width: 100%;
+    order: 2;
+  }
+  .n_sect_div h2 {
+    text-align: center;
+    margin: 10px 0 10px 0;
+    font-size: 25px;
+  }
+  .n_sect_div p {
+    margin: 10px;
+  }
+  .n_sect_img {
+    width: 100%;
+    height: 350px;
+    border-radius: 7px;
+    order: 1;
+  }
+  /* contact */
+  .sec_one {
+    width: 100%;
+    height: 350px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: 10;
+    font-size: 13px;
+  }
+  .s_one {
+    height: 350px;
+    text-align: center;
+    font-size: 20px;
+  }
+  .s_one h2 {
+    font-size: 25px;
+  }
+  .s_two p {
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+  }
+  .iframe {
+    width: 600px;
+    height: 300px;
+    border-radius: 7px;
+  }
+}
+.form_contac {
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
